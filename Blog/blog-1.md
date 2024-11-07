@@ -18,9 +18,11 @@ Intersection types combine multiple types into one. This is useful when you need
 
 ### Example:
 
+```typescript
 type Admin = { role: string };
 type User = { name: string };
 
 type AdminUser = Admin & User;
 
 let adminUser: AdminUser = { role: "Admin", name: "John" };
+```
